@@ -52,7 +52,13 @@ legend {
 
 /* Fibonacci padding: 8px vertical, 13px horizontal */
 input[type="text"],
-select {
+select, 
+input[type="date"] {
     padding: 8px 13px;
     font-size: inherit;
+}
+
+textarea {
+    padding: 8px 13px; 
+    font-size: inherit; 
 }
