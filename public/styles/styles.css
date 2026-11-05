@@ -15,7 +15,8 @@ header {
     align-items: center;
     justify-content: space-between;  
     font-size: 2rem; 
-    padding: 1rem 0.5rem; 
+    padding: 2rem 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 .hero {
@@ -25,11 +26,6 @@ header {
     align-items: center; 
     justify-content: space-between;
     color: #fff;  
-}
-
-header {
-    /* shadow on the header so the unstyled navbar at its bottom edge stands out */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -121,4 +117,6 @@ main {
 
 #search {
     padding: 8px 13px;
+    border-radius: 0.5rem; 
+    width: 300px;   
 }
