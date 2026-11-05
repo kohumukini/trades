@@ -23,8 +23,10 @@ header {
     flex-direction: row; 
     width: 100%;
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    color: #fff;  
 }
+
 header {
     /* shadow on the header so the unstyled navbar at its bottom edge stands out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Job!</title>
+
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/publish.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+        <!-- image here -->
+            <img src="/images/grc_logo_white.png">
+            <h1>Green River College: Job Board</h1>
+        </div> 
+        <nav class="navbar"> 
+            <ul>
+                <li>All Jobs</li>
+                <li>
+                    <a href="https://www.greenriver.edu/students/academics/areas-of-interest/program-maps/trades-industrial-tech-aviation-natural-resources/index.html" target="_blank">
+                        GRC Trades Page
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form id="job-form">
+        <!-- General Info Field -->
+        <fieldset id="job-field">
+            <label for="job-title">
+                Job Title:
+                <input type="text" id="job-title" name="job-title">
+            </label>
+            <label for="job-company">
+                Company:
+                <input type="text" id="job-company" name="job-company">
+            </label>
+            <label for="job-location">
+                Location:
+                <input type="text" id="job-location" name="job-location">
+            </label>
+
+            <label for="post-date">
+                Post Date: 
+                <input type="date" id="post-date" name="post-date">
+            </label>
+            <label for="expire-date">
+                Expire Date: 
+                <input type="date" id="expire-date" name="expire-date">
+            </label>
+        </fieldset>
+
+        <!-- Job Trade Field -->
+        <fieldset id="trade-field">
+            <legend>Trade</legend>
+            <span>Select a Trade</span>
+            <select>
+                <option value="none">-- Choose --</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="automotive">Automotive</option>
+                <option value="plumbing">Plumbing</option>
+            </select>
+        </fieldset>
+
+        <!-- Job Commitment Field -->
+        <fieldset id="commitment-field">
+            <legend>Commitment</legend>
+            <label for="full-time">
+                <input type="radio" id="full-time" name="commitment[]">
+                Full-Time
+            </label>
+            <label for="part-time">
+                <input type="radio" id="part-time" name="commitment[]">
+                Part-Time
+            </label>
+            <label for="contract">
+                <input type="radio" id="contract" name="commitment[]">
+                Contract
+            </label>
+            <label for="seasonal">
+                <input type="radio" id="seasonal" name="commitment[]">
+                Seasonal
+            </label>
+            <label for="internship">
+                <input type="radio" id="internship" name="commitment[]">
+                Internship
+            </label>
+        </fieldset>
+
+        <!-- Conditional Payment Field -->
+        <fieldset id="payment-status-field">
+            <legend>Compensation Type</legend>
+            <label for="paid-yes">
+                <input type="radio" id="paid-yes" name="is-paid" value="yes" checked>
+                Paid Position
+            </label>
+            <label for="paid-no">
+                <input type="radio" id="paid-no" name="is-paid" value="no">
+                Unpaid / Volunteer
+            </label>
+        </fieldset>
+
+        <!-- Salary Amount (Conditional) -->
+        <fieldset id="salary-field">
+            <legend>Salary / Wage</legend>
+            <label for="salary-input">
+                Amount / Range:
+                <input type="text" id="salary-input" name="salary" placeholder="e.g. $30 - $35/hr or $65,000/yr">
+            </label>
+        </fieldset>
+
+        <!-- Description Field -->
+        <fieldset id="description-field">
+            <label for="job-description">
+                Job Description:
+                <textarea id="job-description" name="job-description" rows="5" placeholder="Describe the role, requirements, and benefits..."></textarea>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

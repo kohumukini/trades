@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/add-job', (req, res) => {
+    res.render('publish_jobs')
+}); 
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`)
 })
