@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trades Job Board</title>
+
+    <link rel="icon" href="/images/favicon.png" >
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="hero">
+        <!-- image here -->
+            <img src="./images/grc_logo_white.png">
+            <h1>Green River College: Job Board</h1>
+        </div> 
+        <nav class="navbar"> 
+            <ul>
+                <li>All Jobs</li>
+                <li>
+                    <a href="https://www.greenriver.edu/students/academics/areas-of-interest/program-maps/trades-industrial-tech-aviation-natural-resources/index.html" target="_blank">
+                        GRC Trades Page
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="filter-section">
+            <label for="search">
+                <input type="text" id="search" name="saerch" placeholder="Keyword Search...">
+            </label>
+            <select id="sort-by">
+                <option>Location</option>
+                <option>Employment Status</option>
+                <option>Company</option>
+            </select>
+        </section>
+
+        <ul id="job-list">
+            <li class="job-card">
+                <div class="card-header">
+                    <h4>Summer Sea Kayak & Support Staff</h4>
+                    <p class="apply-button"><a href="">Apply Now!</a></p>
+                </div>
+                <p>Orcas Wild - Eastsound, WA</p>
+                <p>Employment Status</p>
+                <p>Payment</p>
+            </li>
+            <li class="job-card">
+                <div class="card-header">
+                    <h4>Summer Sea Kayak & Support Staff</h4>
+                    <p class="apply-button"><a href="">Apply Now!</a></p>
+                </div>
+                <p>Orcas Wild - Eastsound, WA</p>
+                <p>Employment Status</p>
+                <p>Payment</p>
+            </li>
+            <li class="job-card">
+                <div class="card-header">
+                    <h4>Summer Sea Kayak & Support Staff</h4>
+                    <p class="apply-button"><a href="">Apply Now!</a></p>
+                </div>
+                <p>Orcas Wild - Eastsound, WA</p>
+                <p>Employment Status</p>
+                <p>Payment</p>
+            </li>
+            <li class="job-card">
+                <div class="card-header">
+                    <h4>Summer Sea Kayak & Support Staff</h4>
+                    <p class="apply-button"><a href="">Apply Now!</a></p>
+                </div>
+                <p>Orcas Wild - Eastsound, WA</p>
+                <p>Employment Status</p>
+                <p>Payment</p>
+            </li>
+        </ul>
+
+        <button class="filter-btn">
+            <svg class="filter-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            <span>Filter</span>
+        </button>
+    </main>
 </body>
 </html>

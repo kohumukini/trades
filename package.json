@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/kohumukini/trades#readme",
   "dependencies": {
-    "express": "^5.3.0"
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
   }
 }

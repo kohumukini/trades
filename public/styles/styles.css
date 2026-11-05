@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+header {
+    background-color: green;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;  
+    font-size: 2rem; 
+    padding: 1rem 0.5rem; 
+}
+
+.hero {
+    display: flex; 
+    flex-direction: row; 
+    width: 100%;
+    align-items: center; 
+    justify-content: space-between; 
+}
+header {
+    /* shadow on the header so the unstyled navbar at its bottom edge stands out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.navbar {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+/* 8px 5px = Fibonacci padding (vertical, horizontal) */
+.navbar li {
+    padding: 8px 5px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+#job-list {
+    list-style: none;
+}
+
+.job-card {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 1rem;
+    padding: 1rem 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.job-card:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* clickable hint; real link/handler comes with the details feature */
+.job-card::after {
+    content: "Details ›";
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.apply-button {
+    padding: 8px 5px;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.apply-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* full width; 10% side padding lines the items up with the 80%-wide cards */
+#filter-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10% 1rem;
+}
+
+#search {
+    padding: 8px 13px;
+}
